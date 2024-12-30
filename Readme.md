@@ -74,8 +74,4 @@ Contributions are welcome! Feel free to open issues or submit pull requests for 
 
 ## 📧 Contact
 
-For questions or feedback, reach out at [your-email@example.com].
-
----
-
-Let me know if you'd like to add or tweak anything!
+For questions or feedback, reach out at vijayeswar_y@yahoo.com.
