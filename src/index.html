@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <header class="mx-auto h-20 border-b-2 border-green-400">
+        <nav class="h-full  flex flex-row justify-between items-center mx-7">
+            <div >
+                <a href="#about" class="text-2xl font-semibold text-green-400">V-Devs</a>
+            </div>
+            <ul class="hidden md:flex space-x-7">
+                <li><a href="#about">About</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hidden md:block bg-green-400 px-6 py-3 rounded-full text-white">Signup</button>
+            <button class="md:hidden mobileIcon"><img class="h-10 w-10" src="./assets/hamburger-menu.svg" alt=""></button>
+        </nav>
+    </header>
+
+    <!-- mobile menu -->
+    <div class="hidden md:hidden mobileMenu">
+        <ul class=" flex flex-col items-center space-y-7">
+            <li><a href="#about">About</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="bg-green-400 px-6 py-3 rounded-full text-white">Signup</button></li>            
+        </ul>
+    </div>
+    
+    <!-- Onboard -->
+    <section class="container mx-auto" id="about">  
+        <div class=" my-6 flex flex-col md:flex-row justify-center items-center">
+            <div class="w-4/5 md:w-2/5">
+                <p>Welcome to V-Devs, your ultimate destination for insightful and inspiring content tailored for developers, by developers. Whether you're a seasoned professional or just embarking on your coding journey, we strive to be your go-to resource for learning, exploring, and growing in the ever-evolving tech landscape.</p>
+
+                <h2 class="text-xl font-semibold mt-4">Who We Are</h2>
+                <p class="indent-8">We are a community of passionate developers, designers, and tech enthusiasts who believe in sharing knowledge and fostering innovation. Our team curates andcreates high-quality, practical, and engaging content to help you stay ahead in the world of software development.</p>
+
+                <h2 class="text-xl font-semibold mt-4">Our Mission</h2>
+                <p class="indent-8">Our mission is to empower developers worldwide by providing them with valuable resources, thought-provoking ideas, and a platform to share and grow together. We aim to make complex concepts simple and accessible, inspiring you to achieve your best.</p>
+
+                <h2 class="text-xl font-semibold mt-4">Join the Journey</h2>
+                <p class="indent-8">We invite you to be a part of this vibrant community. Dive into our articles, contribute your own insights, and connect with like-minded professionals who share your passion for technology and innovation.</p>
+            </div>
+            <div class="w-4/5 md:w-2/5 h-full pt-5">
+                <img class="w-full h-full" src="./assets/tech-community.svg" alt="tech-community">
+            </div>
+        </div>
+    </section>
+
+    <hr class="mx-32 border-green-400">
+
+    <!-- Blogs -->
+    <section class="container mx-auto my-6" id="blogs">
+        <h1 class="text-2xl font-semibold mb-5 text-center">Recent Blogs</h1>
+        <div class="flex flex-col justify-center items-center sm:flex-row gap-10 mt-8">
+            <article class='w-72 md:w-80 border-2 rounded-lg py-3 text-center flex flex-col items-center'>
+                <img class="h-40 w-40" src="./assets/javascript-logo.svg" alt="">
+                <h4 class="text-lg font-semibold min-h-10 sm:min-h-12 mt-2">Understanding JavaScript Closures</h4>
+                <p class="min-h-10 sm:min-h-20">Learn how closures work in JavaScript with practicalexamples.</p>
+                <a href="#" class="read-more mt-1 text-blue-800 underline">Read More...</a>                
+            </article>
+            <article class='w-72 md:w-80 border-2 rounded-lg py-3 text-center flex flex-col items-center'>
+                <img class="h-40 w-40" src="./assets/react-logo.svg" alt="">
+                <h4 class="text-lg font-semibold min-h-10 sm:min-h-12 mt-2">Getting Started with React</h4>
+                <p class="min-h-10 sm:min-h-20">A beginner's guide to building your first React application.</p>
+                <a href="#" class="read-more mt-1 text-blue-800 font-blue-400 underline">Read More...</a>               
+            </article>
+            <article class='w-72 md:w-80 border-2 rounded-lg py-3 text-center flex flex-col items-center'>
+                <img class="h-40 w-40" src="./assets/css-logo.svg" alt="">
+                <h4 class="text-lg font-semibold min-h-10 sm:min-h-12 mt-2">Mastering CSS Grid</h4>
+                <p class="min-h-10 sm:min-h-20">Step up your web design game with CSS Grid layouts.</p>
+                <a href="#" class="read-more mt-1 text-blue-800 font-blue-400 underline">Read More...</a>              
+            </article>
+        </div>
+    </section>
+
+    <hr class="mx-32 border-green-400">
+
+    <!-- Pricing -->
+    <section class="container mx-auto my-6" id="pricing">
+        <h1 class="text-2xl font-semibold mb-5 text-center">Pricing</h1>
+        <p class="text-center w-4/5 mx-auto">Enjoy our free blog posts or subscribe for premium content at affordable rates tailored for developers.</p>
+        <div class="flex flex-col justify-center items-center sm:flex-row gap-10 mt-8">
+            <article class="w-72 md:w-80 border-2 rounded-lg py-3 text-center flex flex-col ">
+                <h2 class="text-4xl mb-4">Basic</h2>
+                <p class="text-2xl mb-4">&#8377;399<span>/month</span></p>
+                <ul class="list-[square] text-left mx-auto">
+                    <li class="list-inside">Access to all blog posts</li>
+                    <li class="list-inside">Weekly updates</li>
+                    <li class="list-inside">Email support</li>
+                </ul>
+                <button class="bg-blue-600 mx-auto px-5 py-2 rounded-md mt-5 text-white">Choose Plan</button>
+            </article>
+            <article class="w-72 md:w-80 border-dashed border-4 border-indigo-600 rounded-lg py-3 text-center flex flex-col ">
+                <h2 class="text-4xl mb-4">Pro</h2>
+                <p class="text-2xl mb-4">&#8377;799<span>/month</span></p>
+                <ul class="list-[square] text-left mx-auto">
+                    <li class="list-inside">All Basic features</li>
+                    <li class="list-inside">Ad-free experience</li>
+                    <li class="list-inside">Priority support</li>
+                </ul>
+                <button class="bg-blue-600 mx-auto px-5 py-2 rounded-md mt-5 text-white">Choose Plan</button>
+            </article>
+            <article class="w-72 md:w-80 border-2 rounded-lg py-3 text-center flex flex-col ">
+                <h2 class="text-4xl mb-4">Premium</h2>
+                <p class="text-2xl mb-4">&#8377;1299<span>/month</span></p>
+                <ul class="list-[square] text-left mx-auto">
+                    <li class="list-inside">All Pro features</li>
+                    <li class="list-inside">1-on-1 mentoring</li>
+                    <li class="list-inside">Exclusive content</li>
+                </ul>
+                <button class="bg-blue-600 mx-auto px-5 py-2 rounded-md mt-5 text-white">Choose Plan</button>
+            </article>
+        </div>
+    </section>
+
+    <footer class="bg-slate-600 md:min-h-auto" id="contact">
+        <div class="flex flex-col md:flex-row justify-between items-center mx-10">
+            <ul class="flex space-x-7 mt-3">
+                <li class="text-white"><a href="#about">About</a></li>
+                <li class="text-white"><a href="#blogs">Blogs</a></li>
+                <li class="text-white"><a href="#pricing">Pricing</a></li>
+                <li class="text-white"><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="w-auto flex flex-col justify-between items-center py-5 md:py-10">
+                <a href="#about" class="text-4xl font-semibold text-green-400 mb-5">V-Devs</a>
+                <div class="w-40 flex justify-between items-center">
+                    <a href="#"><img class="h-10 w-10" src="./assets/linkedin-logo.svg" alt="linkedIn"></a>
+                    <a href="#"><img class="h-10 w-10" src="./assets/twitter-logo.svg" alt="twitter"></a>
+                    <a href="#"><img class="h-10 w-10" src="./assets/mail-logo.svg" alt="mail"></a>
+                </div>
+            </div>            
+        </div>
+        
+        <hr class="border-white">
+
+        <!-- footer -->
+        <div class="footer">
+            <p class="text-center text-xs my-2 text-white">&copy; 2024 Developer Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileIconElement = document.querySelector('.mobileIcon')
+        const mobileMenuElement = document.querySelector('.mobileMenu')
+        
+        mobileIconElement.addEventListener('click', ()=> {
+            mobileMenuElement.classList.toggle('hidden')
+        })
+    </script>
+</body>
+</html>
